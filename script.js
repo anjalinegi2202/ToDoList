@@ -8,8 +8,11 @@ plustoadd.addEventListener('click', function(){
     paragraph.innerText = datatoenter.value;
     toContainer.appendChild(paragraph);
     datatoenter.value=""
-  
-
+    
+   paragraph.addEventListener('click', function(){
+        paragraph.style.textDecoration = "line-through";
+    })
+    
     paragraph.addEventListener('dblclick',function()
     {
          toContainer.removeChild(paragraph)
